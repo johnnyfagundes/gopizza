@@ -8,6 +8,7 @@ import { ThemeProvider } from 'styled-components/native';
 import theme from './src/theme';
 import Product from '@screens/Product';
 import { AuthProvider } from '@hooks/auth';
+import Home from '@screens/Home';
 
 export default function App() {
 
@@ -25,7 +26,8 @@ export default function App() {
       <StatusBar style='light' translucent backgroundColor='transparent' />
       <AuthProvider>
         {/* <SignIn /> */}
-        <Product />
+        {/* <Product /> */}
+        <Home />
       </AuthProvider>
     </ThemeProvider>
   );
