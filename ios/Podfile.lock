@@ -664,6 +664,8 @@ PODS:
     - React-jsi (= 0.64.3)
     - React-perflogger (= 0.64.3)
   - React-jsinspector (0.64.3)
+  - react-native-safe-area-context (3.3.2):
+    - React-Core
   - React-perflogger (0.64.3)
   - React-RCTActionSheet (0.64.3):
     - React-Core/RCTActionSheetHeaders (= 0.64.3)
@@ -775,6 +777,9 @@ PODS:
     - React-RCTText
     - ReactCommon/turbomodule/core
     - Yoga
+  - RNScreens (3.10.2):
+    - React-Core
+    - React-RCTImage
   - Yoga (1.14.0)
 
 DEPENDENCIES:
@@ -806,6 +811,7 @@ DEPENDENCIES:
   - React-jsi (from `../node_modules/react-native/ReactCommon/jsi`)
   - React-jsiexecutor (from `../node_modules/react-native/ReactCommon/jsiexecutor`)
   - React-jsinspector (from `../node_modules/react-native/ReactCommon/jsinspector`)
+  - react-native-safe-area-context (from `../node_modules/react-native-safe-area-context`)
   - React-perflogger (from `../node_modules/react-native/ReactCommon/reactperflogger`)
   - React-RCTActionSheet (from `../node_modules/react-native/Libraries/ActionSheetIOS`)
   - React-RCTAnimation (from `../node_modules/react-native/Libraries/NativeAnimation`)
@@ -825,6 +831,7 @@ DEPENDENCIES:
   - "RNFBStorage (from `../node_modules/@react-native-firebase/storage`)"
   - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
   - RNReanimated (from `../node_modules/react-native-reanimated`)
+  - RNScreens (from `../node_modules/react-native-screens`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
@@ -900,6 +907,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/jsiexecutor"
   React-jsinspector:
     :path: "../node_modules/react-native/ReactCommon/jsinspector"
+  react-native-safe-area-context:
+    :path: "../node_modules/react-native-safe-area-context"
   React-perflogger:
     :path: "../node_modules/react-native/ReactCommon/reactperflogger"
   React-RCTActionSheet:
@@ -938,6 +947,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-gesture-handler"
   RNReanimated:
     :path: "../node_modules/react-native-reanimated"
+  RNScreens:
+    :path: "../node_modules/react-native-screens"
   Yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
@@ -985,6 +996,7 @@ SPEC CHECKSUMS:
   React-jsi: a8b09c29521c798f1783348b37b511ba7b3dbeb3
   React-jsiexecutor: df6abc9fafbecb8e5b7a5fbc5e6d4bd017d594d5
   React-jsinspector: 34e23860273a23695342f58eed3ffd3ba10c31e0
+  react-native-safe-area-context: 584dc04881deb49474363f3be89e4ca0e854c057
   React-perflogger: cc76a4254d19640f1d8ad1c66fdee800414b805c
   React-RCTActionSheet: 7448f049318d8d7e8a9a1ebb742ada721757eea8
   React-RCTAnimation: fb9b3fa1a4a9f5e6ab01b3368693ce69860ba76a
@@ -1004,6 +1016,7 @@ SPEC CHECKSUMS:
   RNFBStorage: 495f37ba9f233e3be134c8bc0f31ff011a9eecec
   RNGestureHandler: e1099204721a17a89c81fcd1cc2e92143dc040fb
   RNReanimated: 0e5ef4a7e4e79f84efbe5b40771c31044c51e7d0
+  RNScreens: d6da2b9e29cf523832c2542f47bf1287318b1868
   Yoga: e6ecf3fa25af9d4c87e94ad7d5d292eedef49749
 
 PODFILE CHECKSUM: 97b29effe7d133c33effcb7ce737bb2cc208fa1b
