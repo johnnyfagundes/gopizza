@@ -79,7 +79,7 @@ export default function Home() {
       <Header>
         <Greeting>
           <GreetingEmoji source={happyEmoji} />
-          <GreetingText>Olá, Admin</GreetingText>
+          <GreetingText>Hi, Admin</GreetingText>
         </Greeting>
         <TouchableOpacity>
           <MaterialIcons name="logout" color={COLORS.TITLE} size={24} />
@@ -94,7 +94,7 @@ export default function Home() {
       />
 
       <MenuHeader>
-        <Title>Cardápio</Title>
+        <Title>Menu</Title>
         <MenuItemNumber>{pizzas.length} pizzas</MenuItemNumber>
       </MenuHeader>
 
