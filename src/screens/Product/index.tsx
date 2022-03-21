@@ -106,8 +106,10 @@ export function Product() {
         photo_path: reference.fullPath
       })
       .then(() => navigation.navigate('home'))
-      .catch(() => Alert.alert('Register', 'Something wrong happended'))
-      .finally(() => setIsLoading(false))
+      .catch(() => {
+        setIsLoading(false);
+        Alert.alert('Register', 'Something wrong happended')
+      })
   }
 
   function handleGoBack() {
