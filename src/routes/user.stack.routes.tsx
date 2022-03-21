@@ -1,7 +1,6 @@
 import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-
 import { Product } from '@screens/Product';
 import Home from '@screens/Home';
 
