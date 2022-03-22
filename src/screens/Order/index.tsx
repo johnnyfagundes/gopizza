@@ -20,16 +20,23 @@ import {
 } from './styles';
 import { Input } from '@components/Input';
 import { Button } from '@components/Button';
+import { useNavigation } from '@react-navigation/native';
 
 export function Order() {
   const [size, setSize] = useState('');
+
+  const navigation = useNavigation();
+
+  function handleGoBack() {
+    navigation.goBack();
+  }
 
   return (
     <Container behavior={Platform.OS === 'ios' ? 'padding' : undefined}>
       <ContentScroll>
         <Header>
           <ButtonBack
-            onPress={() => { }}
+            onPress={handleGoBack}
             style={{ marginBottom: 108 }}
           />
         </Header>

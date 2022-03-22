@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useCallback } from 'react';
+import React, { useState, useCallback } from 'react';
 import { Alert, TouchableOpacity, FlatList } from 'react-native';
 import { MaterialIcons } from "@expo/vector-icons";
 import { useTheme } from 'styled-components/native';
@@ -19,15 +19,19 @@ import {
   NewProductButton
 }
   from './styles';
+
+import { useAuth } from '@hooks/auth';
 import { Search } from '@components/Search';
 import { ProductCard, ProductProps } from '@components/ProductCard';
 
-export default function Home() {
+export function Home() {
   const [pizzas, setPizzas] = useState<ProductProps[]>([])
   const [search, setSearch] = useState('');
 
+  
   const { COLORS } = useTheme();
   const navigation = useNavigation();
+  const { user, singOut } = useAuth();
 
   function fetchPizzas(value: string) {
     const formattedValue = value.toLocaleLowerCase().trim();
@@ -67,7 +71,8 @@ export default function Home() {
   }
 
   function handleOpen(id: string) {
-    navigation.navigate('product', { id })
+    const route = user?.isAdmin ? 'product': 'order';
+    navigation.navigate(route, { id })
   }
 
   function handleAdd() {
@@ -81,7 +86,7 @@ export default function Home() {
           <GreetingEmoji source={happyEmoji} />
           <GreetingText>Hi, Admin</GreetingText>
         </Greeting>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={singOut}>
           <MaterialIcons name="logout" color={COLORS.TITLE} size={24} />
         </TouchableOpacity>
       </Header>
@@ -115,11 +120,11 @@ export default function Home() {
         }}
       />
 
-      <NewProductButton
+      {user?.isAdmin && <NewProductButton
         title="New Pizza"
         type="secondary"
         onPress={handleAdd}
-      />
+      />}
     </Container>
   )
 }
