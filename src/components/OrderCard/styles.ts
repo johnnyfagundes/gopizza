@@ -16,7 +16,7 @@ export const Container = styled.TouchableOpacity<ContainerProps>`
   padding: 24px;
 
   ${({ theme, index }) => css`
-    border-right-width: ${index % 2 > 0 ? 0 : 1};
+    border-right-width: ${index % 2 > 0 ? 0 : 1}px;
     border-right-color: ${theme.COLORS.SHAPE};
   `}
 `;

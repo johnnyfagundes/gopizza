@@ -30,9 +30,9 @@ import { ProductProps } from "@src/components/ProductCard";
 type PizzaResponse = ProductProps & {
   photo_path: string;
   price_sizes: {
-    p: string;
+    s: string;
     m: string;
-    g: string;
+    l: string;
   }
 }
 
@@ -98,9 +98,9 @@ export function Product() {
         name_insensitive: name.toLowerCase().trim(),
         description,
         price_sizes: {
-          p: priceSizeP,
+          s: priceSizeP,
           m: priceSizeM,
-          g: priceSizeG,
+          l: priceSizeG,
         },
         photo_url,
         photo_path: reference.fullPath
@@ -145,9 +145,9 @@ export function Product() {
           setName(product.name);
           setImage(product.photo_url);
           setDescription(product.description);
-          setPriceSizeP(product.price_sizes.p);
+          setPriceSizeP(product.price_sizes.s);
           setPriceSizeM(product.price_sizes.m);
-          setPriceSizeG(product.price_sizes.g);
+          setPriceSizeG(product.price_sizes.l);
           setPhotoPath(product.photo_path);
 
         })
