@@ -1,0 +1,1 @@
+sed -i -e "s/spec.module_name = 'yoga'/spec.module_name = 'Yoga'/g" node_modules/react-native/ReactCommon/yoga/Yoga.podspec

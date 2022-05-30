@@ -969,7 +969,7 @@ SPEC CHECKSUMS:
   ExpoModulesCore: 32c0ccb47f477d330ee93db72505380adf0de09a
   EXSplashScreen: 21669e598804ee810547dbb6692c8deb5dd8dbf3
   FBLazyVector: c71c5917ec0ad2de41d5d06a5855f6d5eda06971
-  FBReactNativeSpec: 78f59b483c8671752e1fe00b9de41b2e2ab1c6ac
+  FBReactNativeSpec: 86676adabf28a65b7aeb749b1e94f71b36128a48
   Firebase: 580d09e8edafc3073ebf09c03fd42e4d80d35fe9
   FirebaseAuth: 5250d7bdba35e57cc34ec7ddc525f82b2757f2a0
   FirebaseCore: 8138de860a90ca7eec5e324da5788fb0ebf1d93c
@@ -1017,8 +1017,8 @@ SPEC CHECKSUMS:
   RNGestureHandler: e1099204721a17a89c81fcd1cc2e92143dc040fb
   RNReanimated: 0e5ef4a7e4e79f84efbe5b40771c31044c51e7d0
   RNScreens: d6da2b9e29cf523832c2542f47bf1287318b1868
-  Yoga: e6ecf3fa25af9d4c87e94ad7d5d292eedef49749
+  Yoga: 2cdb9609bfbe436c97c6872b6b55c1f698ddb725
 
 PODFILE CHECKSUM: 97b29effe7d133c33effcb7ce737bb2cc208fa1b
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.11.3
